@@ -1,0 +1,196 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.index{
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  padding-top: 6rem;
+  overflow: hidden;
+}
+.intro h2{
+  color: white;
+  font-weight: 100;
+}
+.intro h2 span{
+  color: #FF00B8;
+  font-weight: bold;
+}
+.navIndex{
+  background: #000000;
+  box-shadow: 6px 8px 22px #FF00B8;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  margin-left: -4rem;
+  margin-top: 10rem;
+}
+.navIndex a{
+/* padding: .5rem; */
+cursor: pointer;
+ color: white !important;
+}
+.nav a:hover{
+/* padding: .5rem; */
+cursor: pointer;
+ color: palevioletred !important;
+}
+.avatar{
+  display: flex;
+  align-items: center;
+  margin-top: 12rem;
+}
+.wrap-avatar{
+  width: 25vw;
+}
+.wrap-avatar img{
+  width: 100%;
+  object-fit: cover;
+  
+}
+.wrap-navigasi{
+  animation: App-logo-spin 1500ms linear infinite alternate ;
+
+}
+@keyframes App-logo-spin {
+  from {
+    transform: translateY(-7px)
+  }
+  to {
+    transform: translateY(7px)
+  }
+}
+.star {
+  position: absolute;
+  overflow: hidden;
+  bottom :0;
+  left : 0;
+  right: 0;
+  height: 30vh;
+}
+.star img{
+   animation: maniac 15s linear infinite;
+}
+@keyframes maniac {
+  from {
+    transform:translateY(0); 
+  }
+  to {
+    transform:translateY(93vh);
+  
+
+  }
+}
+
+
+/* HOme */
+.home{
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+}
+.home .kontainer {
+  flex: none;
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+}
+.home .kontainer.about {
+  background-color: blue;
+}
+.home .kontainer.skill {
+  background-color: yellow;
+}
+.home .kontainer.kontak {
+  background-color: white;
+}
+.sidebar{
+  background-color: #000000;
+}
+.home .kontainer.about .sidebar, .home .kontainer.Portofolio .sidebar{
+  background-color: white;
+  color: #000000;
+}
+.foto img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.foto img{
+  box-shadow: 6px 5px 72px rgba(196, 28, 68, 0.81);
+  border-radius: 29px;
+}
+.home .kontainer.about,.home .kontainer.Portofolio  {
+  background-color: black;
+  color: white;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.konten{
+  height: 100%;
+}
+.konten h2{
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 44px;
+width: 16rem;
+/* identical to box height */
+transform: rotate(-90deg); 
+
+}
+.konten .accordion-header {
+  transform: rotate(0); 
+  width: 100%;
+
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.h1{
+  width: 13rem;
+  translate:-35% -7rem;
+}
+
+.isi-konten{
+  flex-direction: column;
+}
+.isi-konten h1{
+  text-align: end;
+}
+.isi-konten {
+  font-size: 23px;
+}
+
+/* sidebar */
+.sidebar{
+  color: white;
+}
+/* card */
+.card {
+  color: #000000;
+}
+/* isi porto */
+.all-porto{
+  overflow: scroll;
+  height: 70vh;
+}
