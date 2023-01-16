@@ -10,8 +10,8 @@ function Rute() {
   return (
     <Routes>
       <Route path="/" element={<Index />} />
-      <Route path="/home"  element={<Home />} />
-      <Route path="/about//*"  element={<Aboutme />} />
+      <Route path="/home//*"  element={<Home />} />
+      <Route path="/home/about//"  element={<Aboutme />} />
      </Routes>
   );
 }

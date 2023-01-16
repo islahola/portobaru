@@ -4,12 +4,16 @@ import Index from './pages';
 import './assets/css/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import Home from './pages/home';
+import { BrowserRouter } from 'react-router-dom';
+import Rute from './component/rute';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <Index/>
+     <BrowserRouter>
+      <Rute/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

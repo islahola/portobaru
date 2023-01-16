@@ -5,7 +5,7 @@ import IsiSkill from '../component/home/konten/skill';
 
 const Skill = () => {
   return (
-    <div >
+    <div>
       <Container konten={<Index isi={<IsiSkill/>} />} class="kontak"/>
     </div>
   );
