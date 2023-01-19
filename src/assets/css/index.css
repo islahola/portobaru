@@ -287,8 +287,10 @@ width: 16rem;
   .card-body{
     flex-direction: column-reverse;
   }
-  .home{
+  #about{
     overflow: auto;
+    height: 100vh;
+    
   }
   .index .intro{
     justify-content: center;
