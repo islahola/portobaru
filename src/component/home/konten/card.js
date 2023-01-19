@@ -6,7 +6,7 @@ const Card = (props) => {
     <div className="card-header">
       {props.judul}
     </div>
-    <div className="card-body d-flex justify-content-between">
+    <div className="card-body d-flex  justify-content-between">
       <div className='col-lg-6'>
         <h5 className="card-title">{props.apk}</h5>
         <p className="card-text">
@@ -14,7 +14,7 @@ const Card = (props) => {
         </p>
         <a href={props.link} className="btn" target="_blank">Go Detail</a>
       </div>
-      <div className='col-lg-5 '>
+      <div className='col-lg-5 pb-3 '>
         <img src={props.img}/>
       </div>
     </div>

@@ -6,9 +6,9 @@ const KontakIsi = () => {
     setKirim(kirim ? false :true)
   }
   return (
-    <div id="kontak">
-    <h1 className='col-11 pb-4 container' ><span>Contact </span> Me</h1>
-      <div className='ps-5 d-flex align-items-center kontak-wrap'>
+    <div className='col-11 pb-5 container' id="kontak">
+    <h1  className='pb-4'><span>Contact </span> Me</h1>
+      <div className='d-flex align-items-center kontak-wrap'>
         <h4 className='col-10 col-lg-6'>
         If you have questions about me or want to submit Information, Suggestions, Experiences with me , please fill out the form next to this.
         </h4>

@@ -4,7 +4,7 @@ const IsiSkill = () => {
   return (
     <div className='col-10 mx-auto' id="skill">
     <div className='d-flex justify-content-end'>
-      <h1 className='skil-title  col-3'>Advance</h1>
+      <h1 className='skil-title '>Advance</h1>
     </div>
     <div className='isinya pt-4'>
     <div class="accordion accordion-flush" id="accordionFlushExample">

@@ -10,7 +10,7 @@ const Index = () => {
       <div className='star'>
         <Star/>
        </div>
-      <div className='container d-flex'>
+      <div className='container  d-flex intro'>
         <Intro/>
         <div className='d-flex   wrap-navigasi'>
           <Avatar/>

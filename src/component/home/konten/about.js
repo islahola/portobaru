@@ -3,7 +3,7 @@ import image from '../../../assets/image/foto.png'
 import iconArrow from '../../../assets/image/arraw.png'
 const About = () => {
   return (
-    <div className='col-10 m-auto pt-3' id='about'>
+    <div className='col-10 m-auto pt-5' id='about'>
     <h1  >About  <span className='title-about'>Me</span></h1>
     <div className='isinya d-flex pt-4 align-items-center  justify-content-between '>
       <div className='col-lg-7  col-10 '>

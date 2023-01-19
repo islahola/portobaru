@@ -284,6 +284,15 @@ width: 16rem;
 }
 
 @media only screen and (max-width: 992px) {
+  .card-body{
+    flex-direction: column-reverse;
+  }
+  .home{
+    overflow: auto;
+  }
+  .index .intro{
+    justify-content: center;
+  }
   .kontak-wrap{
    flex-direction: column; 
   }
@@ -312,6 +321,7 @@ width: 16rem;
 .sidemobile{
   position: absolute;
   background: #000000;
+  z-index: 3;
   color: white;
   right: 0;
   left: 0;
@@ -319,7 +329,7 @@ width: 16rem;
   top: 0;
 }
 .menubar{
-  z-index: 2;
+  z-index: 5;
   position: absolute;
   left:1rem;
   top:1rem
@@ -328,7 +338,7 @@ width: 16rem;
   display: none;
 }
 .sidemobile a{
-  color: #FF00B8;
+  color: salmon;
   font-size: 31px;
   line-height: 3rem;
   text-decoration: none;
