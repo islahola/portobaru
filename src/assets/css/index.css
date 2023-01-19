@@ -284,13 +284,16 @@ width: 16rem;
 }
 
 @media only screen and (max-width: 992px) {
+  #porto{
+    margin-top: 1rem;
+  }
   .card-body{
     flex-direction: column-reverse;
   }
   #about{
     overflow: auto;
     height: 100vh;
-    
+
   }
   .index .intro{
     justify-content: center;
