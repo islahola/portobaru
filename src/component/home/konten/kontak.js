@@ -1,16 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 const KontakIsi = () => {
+  const [kirim, setKirim] = useState(false);
+  const handleKirim = () =>{
+    setKirim(kirim ? false :true)
+  }
   return (
-    <div>
-    <h1 className='me-5 pb-5'>Contact Me</h1>
-      <div className='ps-5 d-flex align-items-center'>
-        
-        <h4 className='col-6'>
+    <div id="kontak">
+    <h1 className='col-11 pb-4 container' ><span>Contact </span> Me</h1>
+      <div className='ps-5 d-flex align-items-center kontak-wrap'>
+        <h4 className='col-10 col-lg-6'>
         If you have questions about me or want to submit Information, Suggestions, Experiences with me , please fill out the form next to this.
         </h4>
-        <div className='ps-5'>
-        <form>
+        <div className='col-10 col-lg-5'>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
@@ -19,11 +21,13 @@ const KontakIsi = () => {
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Pesan</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-
           </div>
-          <button type="submit" class="btn btn-primary">Kirim</button>
-        </form>       
-
+          <button onClick={handleKirim} class="btn ">Kirim</button>
+        <div className={kirim ? 'd-flex kontak-kirim' : 'd-none'}>
+          <div className='col-5 bg-dark p-4 wrap-terkirim'><h3>Telah terkirim</h3>
+          <div><button onClick={handleKirim} class="btn ">Selesai</button>
+          </div></div>
+        </div>
         </div>
       </div>
     </div>

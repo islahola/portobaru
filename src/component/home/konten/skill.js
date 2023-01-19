@@ -2,8 +2,10 @@ import React from 'react';
 
 const IsiSkill = () => {
   return (
-    <div className='col-10 mx-auto'>
-    <h1 >Advance</h1>
+    <div className='col-10 mx-auto' id="skill">
+    <div className='d-flex justify-content-end'>
+      <h1 className='skil-title  col-3'>Advance</h1>
+    </div>
     <div className='isinya pt-4'>
     <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">

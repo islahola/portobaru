@@ -24,8 +24,8 @@ const IsiPortofolio = () => {
     setIsiporto(<Word/>)
   }
   return (
-    <div className='col-10 mx-auto'>
-    <h1 >Portofolio</h1>
+    <div className='col-10 mx-auto' id="porto">
+    <h1 ><span>Porto</span>folio</h1>
     <div className='isinya pt-4'>
     <ul class="nav nav-tabs">
       <li class="nav-item">
@@ -46,12 +46,6 @@ const IsiPortofolio = () => {
     </ul>
     <div className='all-porto'>
       {isiPorto}
-      {/* <div>all</div>
-      <div>Figma</div>
-      <div>Wordpress</div>
-      <div>Laravel</div>
-      <div>React.js</div> */
-      }
     </div>
     </div>
   </div>

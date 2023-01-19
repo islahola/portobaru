@@ -42,6 +42,9 @@ body,
 /* padding: .5rem; */
 cursor: pointer;
  color: white !important;
+ text-decoration: none;
+ font-weight: 400;
+text-transform: capitalize;
 }
 .nav a:hover{
 /* padding: .5rem; */
@@ -100,6 +103,10 @@ cursor: pointer;
 .home{
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+
+}
+.konten-test{
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -109,10 +116,50 @@ cursor: pointer;
   flex: none;
   scroll-snap-align: start;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .home .kontainer.about {
   background-color: blue;
+}
+.home .title-about {
+  background-color: salmon;
+  padding: .3rem;
+}
+.home .front-end{
+  border-bottom: 3px solid salmon;
+}
+.home .arrow{
+  width: 2rem;
+  margin-left: 1rem;
+}
+.home .arrow img{
+  width: 100%;
+  object-fit: contain;
+}
+.home #about p{
+  font-size: 23px;
+}
+.home .slider{
+  animation: slider 1100ms linear infinite alternate ;
+  
+}
+.home .wrap-nama{
+    margin: 12rem;
+    transform: rotate(90deg);
+    translate: -9.6rem;
+}
+.home .icon-kontak img{
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 1rem;
+}
+@keyframes slider {
+  from {
+    transform: translateX(-10px)
+  }
+  to {
+    transform: translateX(10px)
+  }
 }
 .home .kontainer.skill {
   background-color: yellow;
@@ -123,6 +170,27 @@ cursor: pointer;
 .sidebar{
   background-color: #000000;
 }
+.sidebarHome{
+  display: flex;
+  flex-direction: column;
+}
+.sidebarHome a{
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 50px;
+  color: salmon;
+  font-weight: 500;
+}
+.icon-kontak:hover {
+  transform: scale(80%);
+  transition: 2000ms;
+}
+.sidebarHome a:hover, .sidebarHome a:focus  {
+  color: white;
+}
+.btn-pointer{
+  cursor: pointer;
+}
 .home .kontainer.about .sidebar, .home .kontainer.Portofolio .sidebar{
   background-color: white;
   color: #000000;
@@ -132,10 +200,7 @@ cursor: pointer;
   object-fit: cover;
 }
 
-.foto img{
-  box-shadow: 6px 5px 72px rgba(196, 28, 68, 0.81);
-  border-radius: 29px;
-}
+
 .home .kontainer.about,.home .kontainer.Portofolio  {
   background-color: black;
   color: white;
@@ -152,9 +217,16 @@ font-weight: 600;
 font-size: 21px;
 line-height: 44px;
 width: 16rem;
-/* identical to box height */
-transform: rotate(-90deg); 
-
+}
+.konten .info{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+.nama{
+  min-width: 25vw;
 }
 .konten .accordion-header {
   transform: rotate(0); 
@@ -174,8 +246,8 @@ transform: rotate(-90deg);
 .isi-konten{
   flex-direction: column;
 }
-.isi-konten h1{
-  text-align: end;
+.isi-konten .skil-title {
+  color: salmon;
 }
 .isi-konten {
   font-size: 23px;
@@ -189,8 +261,98 @@ transform: rotate(-90deg);
 .card {
   color: #000000;
 }
+.card img{
+  width: 100%;
+  object-fit: cover;
+}
 /* isi porto */
 .all-porto{
   overflow: scroll;
   height: 70vh;
+}
+#porto span{
+  color: salmon;
+}
+#porto .nav-link{
+  color: black;
+}
+#porto .btn{
+  background-color: salmon;
+}
+#porto .nav-link:hover, #porto .nav-link:focus{
+  color: salmon;
+}
+
+@media only screen and (max-width: 992px) {
+  .kontak-wrap{
+   flex-direction: column; 
+  }
+  .nav-mobile{
+    display: flex !important;
+  }
+  .side-mobile.col-3 {
+    display: none !important;
+  }
+  .konten .isinya{
+    flex-direction: column-reverse;
+  }
+  .home .kontainer{
+    height: 100%;
+  }
+  .isi-konten h1 {
+    text-align: center;
+}
+.foto.ms-5 {
+  margin-left: 0!important;
+}
+.about-test{
+  margin-top: 1rem;
+}
+}
+.sidemobile{
+  position: absolute;
+  background: #000000;
+  color: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+.menubar{
+  z-index: 2;
+  position: absolute;
+  left:1rem;
+  top:1rem
+}
+.nav-mobile{
+  display: none;
+}
+.sidemobile a{
+  color: #FF00B8;
+  font-size: 31px;
+  line-height: 3rem;
+  text-decoration: none;
+}
+
+#kontak .btn{
+  background-color: salmon;
+}
+#kontak span{
+  border-bottom:3px solid salmon;
+}
+#kontak .kontak-kirim{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#kontak .kontak-kirim h3{
+  color: white;
+}
+#kontak .kontak-kirim .wrap-terkirim{
+  border-radius: 1rem;  
 }
