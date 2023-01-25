@@ -9,7 +9,7 @@ const Laravel = () => {
       <Card img={desa} link="https://github.com/islahola/cijujung" judul="Desa Cijujung" apk = "Laravel" detail="
       Duration: Two weeks,
       Technologies: Laravel,SASS,Bootstrap, Javascript and Jquery, Created a website desa cijujung jawabarat  with up to date technologies and frameworks."/>
-      <Card img={meraki} link="https://github.com/islahola/meraki" judul="Pet Hero" apk = "Laravel" detail="
+      <Card img={meraki} link="http://pethero.rf.gd/" judul="Pet Hero" apk = "Laravel" detail="
       Duration: Fiva Days,
       Technologies: Laravel,SASS,Bootstrap, Javascript and Jquery, Created a about hero and everything with up to date technologies and frameworks."/>
     </div>
